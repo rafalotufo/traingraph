@@ -1,4 +1,3 @@
-import com.sun.corba.se.impl.orbutil.graph.Graph;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,7 +10,7 @@ public class GraphTraversalTest {
     public void testEmptyGraph() {
         Map<String,Node> nodes = GraphBuilder.buildGraph("");
 
-        Assert.assertEquals(Optional.empty(), GraphTraversal.findShortestPath(null, "B"));
+        Assert.assertEquals(Optional.empty(), GraphTraversal .findShortestPath(null, "B"));
     }
 
     @Test
